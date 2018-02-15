@@ -6,4 +6,7 @@ package com.nikhil;
 public class Lexer {
     Token token;
     String ch;
+    void next(){
+
+    }
 }
