@@ -21,6 +21,14 @@ public class CharStream {
     }
 
     void next() throws Exception{
-        //TODO
+        //TODO rough code as described in lecture
+
+        if ( eof ){
+//            throw EndOfInput (" reading ") ;
+        }
+
+        int c = file . read () ;
+        eof = ( c == -1) ;
+        current = ( char ) c ;
     }
 }
