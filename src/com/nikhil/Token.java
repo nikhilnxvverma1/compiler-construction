@@ -18,4 +18,9 @@ public enum Token {
     PLUS,
     LEQ,
     IF,
+    ELSE,
+    INTERFACE,
+    VOID,
+    THIS,
+    NEW
 }
