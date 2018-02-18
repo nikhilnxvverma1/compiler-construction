@@ -21,6 +21,8 @@ public class Lexer {
         keywords.put("else",Token.ELSE);
         keywords.put("this",Token.THIS);
         keywords.put("new",Token.NEW);
+        keywords.put("boolean",Token.BOOLEAN);
+        keywords.put("sidef",Token.SIDEF);
 
     }
 

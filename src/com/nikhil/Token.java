@@ -22,5 +22,7 @@ public enum Token {
     INTERFACE,
     VOID,
     THIS,
-    NEW
+    NEW,
+    BOOLEAN,
+    SIDEF
 }
