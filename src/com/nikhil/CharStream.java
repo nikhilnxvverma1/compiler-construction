@@ -24,11 +24,13 @@ public class CharStream {
         //TODO rough code as described in lecture
 
         if ( eof ){
+            throw new Exception("reading");
 //            throw EndOfInput (" reading ") ;
         }
 
         int c = file . read () ;
         eof = ( c == -1) ;
         current = ( char ) c ;
+        System.out.print(this.current);
     }
 }
