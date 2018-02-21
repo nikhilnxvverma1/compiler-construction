@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         String option;
-        String filename="";
+        String filename="BinarySearch.emj";
 
         if(args.length==0){
             System.out.println("Please give source file");
@@ -30,12 +30,10 @@ public class Main {
 
         try {
             // FileReader reads text files in the default encoding.
-            FileReader fileReader =
-                    new FileReader(filename);
+            FileReader fileReader = new FileReader(filename);
 
             // Always wrap FileReader in BufferedReader.
-            BufferedReader bufferedReader =
-                    new BufferedReader(fileReader);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
 
             while((line = bufferedReader.readLine()) != null) {
                 System.out.println(line);
