@@ -3,6 +3,7 @@ package com.nikhil;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 /**
  * Created by nikhilverma on 2/14/18.
@@ -32,5 +33,23 @@ public class CharStream {
         eof = ( c == -1) ;
         current = ( char ) c ;
         System.out.print(this.current);
+    }
+
+    void beginReading(){
+
+        String line;
+        try {
+            while((line = file.readLine()) != null) {
+                System.out.println(line);//TODO get rid of this and replace with tokenizing code
+            }
+            file.close();
+        }
+        catch(FileNotFoundException ex) {
+            System.out.println(ex.getMessage());
+        }
+        catch(IOException ex) {
+            System.out.println(ex.getMessage());
+
+        }
     }
 }

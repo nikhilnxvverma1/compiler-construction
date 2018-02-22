@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         String option;
-        String filename="BinarySearch.emj";
+        String filename="/Users/nikhilverma/Desktop/lexer/src/com/nikhil/BinarySearch.emj";
 
         if(args.length==0){
             System.out.println("Please give source file");
@@ -45,7 +45,7 @@ public class Main {
         catch(FileNotFoundException ex) {
             System.out.println(
                     "Unable to open file '" +
-                            filename + "'");
+                            filename + "'"+ex.getMessage());
         }
         catch(IOException ex) {
             System.out.println(
