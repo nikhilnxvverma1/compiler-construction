@@ -3,7 +3,7 @@ package com.nikhil;
 /**
  * Created by nikhilverma on 2/13/18.
  */
-public enum Token {
+public enum TokenType {
     EOF,
     ID, //x
     INT,

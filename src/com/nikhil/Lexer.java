@@ -7,22 +7,22 @@ import java.util.Map;
  * Created by nikhilverma on 2/13/18.
  */
 public class Lexer {
-    Token token;
+    TokenType token;
     CharStream ch;
 
-    Map<String,Token> keywords = new HashMap<>();
+    Map<String,TokenType> keywords = new HashMap<>();
 
     Lexer(){
-        keywords.put("int",Token.INT);
-        keywords.put("interface",Token.INTERFACE);
-        keywords.put("void",Token.VOID);
-        keywords.put("while",Token.WHILE);
-        keywords.put("if",Token.IF);
-        keywords.put("else",Token.ELSE);
-        keywords.put("this",Token.THIS);
-        keywords.put("new",Token.NEW);
-        keywords.put("boolean",Token.BOOLEAN);
-        keywords.put("sidef",Token.SIDEF);
+        keywords.put("int", TokenType.INT);
+        keywords.put("interface", TokenType.INTERFACE);
+        keywords.put("void", TokenType.VOID);
+        keywords.put("while", TokenType.WHILE);
+        keywords.put("if", TokenType.IF);
+        keywords.put("else", TokenType.ELSE);
+        keywords.put("this", TokenType.THIS);
+        keywords.put("new", TokenType.NEW);
+        keywords.put("boolean", TokenType.BOOLEAN);
+        keywords.put("sidef", TokenType.SIDEF);
 
     }
 
