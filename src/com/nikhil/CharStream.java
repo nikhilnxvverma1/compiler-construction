@@ -16,7 +16,7 @@ public class CharStream {
     BufferedReader file;
     char current = ' ';
     boolean eof = false;
-    List<TokenType> tokenList = new ArrayList<>();
+    List<Token> tokenList = new ArrayList<>();
 
     public CharStream(String filename) throws FileNotFoundException {
         this.filename = filename;
@@ -44,7 +44,7 @@ public class CharStream {
         try {
             while((line = file.readLine()) != null) {
                 System.out.println(line);//TODO get rid of this and replace with tokenizing code
-                // iterate through this line charecter by charecter
+                // iterate through this line character by character
                 lexify(line);
             }
             file.close();
@@ -70,6 +70,8 @@ public class CharStream {
     //                ch.next();
     //                c = ch.current;
                 }
+                Token token = new Token();
+                token.tokenType= TokenType.ID;
             }
             if (Character.isDigit(c)) {
                 int k = 0;
@@ -79,11 +81,12 @@ public class CharStream {
                     //                ch.next();
                     //                c = ch.current;
                 }
+                Token token = new Token();
+                token.tokenType= TokenType.INT;
+                token.value = k;
             }
 
-//            TokenType token = new TokenType();
-//            token.kind = INT;
-//            token.value = k;
+
             }
 //        if(!keywords.containsKey(b.toString)){
 //            token.kind = ID;
