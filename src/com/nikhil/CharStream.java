@@ -28,8 +28,8 @@ public class CharStream {
         //TODO rough code as described in lecture
 
         if ( eof ){
-            throw new Exception("reading");
-//            throw EndOfInput (" reading ") ;
+//            throw new Exception("reading");
+            throw new EndOfInput(" reading ");
         }
 
         int c = file . read () ;

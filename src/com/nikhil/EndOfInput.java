@@ -5,6 +5,12 @@ package com.nikhil;
  */
 public class EndOfInput extends Exception{
 
+    String message;
+
+    EndOfInput(String message){
+        this.message = message;
+    }
+
     String message(){
         return "Input has ended with message:"+this.getMessage();
     }
