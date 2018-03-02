@@ -7,6 +7,7 @@ public enum TokenType {
     EOF,
     ID, //x
     INT,
+    KEYWORD,
     LPAREN,
     RPAREN,
     SCOLON,
