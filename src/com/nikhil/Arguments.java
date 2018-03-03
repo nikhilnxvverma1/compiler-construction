@@ -6,7 +6,7 @@ package com.nikhil;
 public class Arguments {
 
     boolean lex=true;
-    String filename;
+    String filename="BinarySearch.emj";
 
     public Arguments(String args[]) {
 
