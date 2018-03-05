@@ -11,6 +11,15 @@ public class Main {
 
         Arguments arguments = new Arguments(args);
 
+        try{
+            CharStream charStream = new CharStream(arguments.filename);
+            charStream.beginReading();
+        }catch (FileNotFoundException ex){
+            //TODO
+        }
+
+
+
         //TODO send the filename to respective operation class
         //TODO the following code is only for reference purposes
 
