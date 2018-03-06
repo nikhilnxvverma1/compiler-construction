@@ -61,6 +61,7 @@ public class CharStream {
     private void lexify(String line){
         //appends to the tokenList
         int length = line.length();
+        Token token = new Token();
         for(int i=0;i<length;i++) {
             char c = line.charAt(i);
             if (Character.isLetter(c)) {
@@ -70,7 +71,7 @@ public class CharStream {
                     //                ch.next();
                     //                c = ch.current;
                 }
-                Token token = new Token();
+                token = new Token();
                 token.tokenType = TokenType.ID;
             }
             if (Character.isDigit(c)) {
@@ -81,13 +82,17 @@ public class CharStream {
                     //                ch.next();
                     //                c = ch.current;
                 }
-                Token token = new Token();
+                token = new Token();
                 token.tokenType = TokenType.INT;
                 token.value = k;
             }else{
-                Token token = new Token();
+                token = new Token();
                 token.tokenType = TokenType.KEYWORD;
                 token.value = c;// TODO look ahead upto the end
+            }
+
+            if(token!=null){
+                tokenList.add(token);
             }
 
         }

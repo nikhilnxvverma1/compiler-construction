@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d7534ae4-a500-46cd-aa45-35afd4aed1f5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nikhil/Main.java" afterPath="$PROJECT_DIR$/src/com/nikhil/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nikhil/CharStream.java" afterPath="$PROJECT_DIR$/src/com/nikhil/CharStream.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+            <state relative-caret-position="240">
+              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,16 +41,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinarySearch.emj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BinarySearch.emj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/Lexer.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -63,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CharStream.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CharStream.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+            <state relative-caret-position="328">
+              <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,9 +139,9 @@
         <option value="$PROJECT_DIR$/src/com/nikhil/Token.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/EndOfInput.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/TokenType.java" />
-        <option value="$PROJECT_DIR$/src/com/nikhil/CharStream.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/Arguments.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/nikhil/CharStream.java" />
       </list>
     </option>
   </component>
@@ -569,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520113470535</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Small installment of CharStream in Main class">
+      <created>1520225897982</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1520225897982</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -628,7 +625,8 @@
     <MESSAGE value="Rough logic for detecting keywords in a line" />
     <MESSAGE value="Extracted command line interface arguments in a separate class" />
     <MESSAGE value="Moved argument extraction code in its own class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved argument extraction code in its own class" />
+    <MESSAGE value="Small installment of CharStream in Main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small installment of CharStream in Main class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -745,20 +743,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
+    <entry file="file://$PROJECT_DIR$/src/com/nikhil/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+        <state relative-caret-position="240">
+          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nikhil/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+        <state relative-caret-position="328">
+          <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
