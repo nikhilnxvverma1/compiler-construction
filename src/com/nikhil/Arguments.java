@@ -10,8 +10,6 @@ public class Arguments {
 
     public Arguments(String args[]) {
 
-        filename="/Users/nikhilverma/Desktop/lexer/src/com/nikhil/BinarySearch.emj";
-
         if(args.length==0){
             System.out.println("Please give source file");
         }else if(args.length==1){
