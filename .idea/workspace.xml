@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d7534ae4-a500-46cd-aa45-35afd4aed1f5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nikhil/Arguments.java" afterPath="$PROJECT_DIR$/src/com/nikhil/Arguments.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nikhil/CharStream.java" afterPath="$PROJECT_DIR$/src/com/nikhil/CharStream.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +46,8 @@
       <file leaf-file-name="CharStream.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+            <state relative-caret-position="388">
+              <caret line="110" column="67" lean-forward="false" selection-start-line="110" selection-start-column="67" selection-end-line="110" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,8 +130,8 @@
         <option value="$PROJECT_DIR$/src/com/nikhil/EndOfInput.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/TokenType.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/nikhil/CharStream.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/Arguments.java" />
+        <option value="$PROJECT_DIR$/src/com/nikhil/CharStream.java" />
       </list>
     </option>
   </component>
@@ -563,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520312104692</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Simplyfying the creation of args">
+      <created>1520485189511</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1520485189511</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -624,7 +631,8 @@
     <MESSAGE value="Moved argument extraction code in its own class" />
     <MESSAGE value="Small installment of CharStream in Main class" />
     <MESSAGE value="Pushed token to the token list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pushed token to the token list" />
+    <MESSAGE value="Simplyfying the creation of args" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplyfying the creation of args" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -753,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+        <state relative-caret-position="388">
+          <caret line="110" column="67" lean-forward="false" selection-start-line="110" selection-start-column="67" selection-end-line="110" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

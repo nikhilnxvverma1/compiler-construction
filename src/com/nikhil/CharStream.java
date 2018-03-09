@@ -17,6 +17,7 @@ public class CharStream {
     char current = ' ';
     boolean eof = false;
     List<Token> tokenList = new ArrayList<>();
+    private String outputFileName;
 
     public CharStream(String filename) throws FileNotFoundException {
         this.filename = filename;
@@ -56,6 +57,8 @@ public class CharStream {
             System.out.println(ex.getMessage());
 
         }
+
+        printToFile("outputFileName");
     }
 
     private void lexify(String line){
@@ -102,5 +105,9 @@ public class CharStream {
 //        }
 //        else token.kind = KW;
 //        }
+    }
+
+    private void printToFile(String outputFile){
+        // TODO print whatever exists in the token list to the file
     }
 }
