@@ -64,24 +64,31 @@ public class CharStream {
     private void lexify(String line){
         //appends to the tokenList
         int length = line.length();
-        Token token = new Token();
+        Token token;
         for(int i=0;i<length;i++) {
             char c = line.charAt(i);
+
+            //alphanumeric id
             if (Character.isLetter(c)) {
-                StringBuffer b = new StringBuffer();
+                StringBuffer alphanumericId = new StringBuffer();
                 while (Character.isLetter(c) || Character.isDigit(c)) {
-                    b.append(c);
+                    alphanumericId.append(c);
+                    i++;
+                    c=line.charAt(i);
                     //                ch.next();
                     //                c = ch.current;
                 }
                 token = new Token();
                 token.tokenType = TokenType.ID;
             }
+
+            //number
             if (Character.isDigit(c)) {
                 int k = 0;
                 while (Character.isDigit(c)) {
-                    k = 10 * k +
-                            Character.getNumericValue(c);
+                    k = 10 * k + Character.getNumericValue(c);
+                    i++;
+                    c=line.charAt(i);
                     //                ch.next();
                     //                c = ch.current;
                 }
