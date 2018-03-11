@@ -58,7 +58,7 @@ public class CharStream {
 
         }
 
-        printToFile("outputFileName");
+        printToFile("outputFile");
     }
 
     private void lexify(String line){
@@ -73,10 +73,10 @@ public class CharStream {
                 StringBuffer alphanumericId = new StringBuffer();
                 while (Character.isLetter(c) || Character.isDigit(c)) {
                     alphanumericId.append(c);
-                    i++;
-                    c=line.charAt(i);
-                    //                ch.next();
-                    //                c = ch.current;
+                    if(i+1<length){
+                        i++;
+                        c=line.charAt(i);
+                    }
                 }
                 token = new Token();
                 token.tokenType = TokenType.ID;
@@ -87,10 +87,12 @@ public class CharStream {
                 int k = 0;
                 while (Character.isDigit(c)) {
                     k = 10 * k + Character.getNumericValue(c);
-                    i++;
-                    c=line.charAt(i);
-                    //                ch.next();
-                    //                c = ch.current;
+
+                    if(i+1<length){
+                        i++;
+                        c=line.charAt(i);
+                    }
+
                 }
                 token = new Token();
                 token.tokenType = TokenType.INT;
@@ -103,6 +105,7 @@ public class CharStream {
 
             if(token!=null){
                 tokenList.add(token);
+                System.out.println(token.toString());
             }
 
         }

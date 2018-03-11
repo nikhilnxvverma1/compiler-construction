@@ -9,4 +9,9 @@ public class Token {
     int value;
     /** In case of alphanumeric ids*/
     int id;
+
+    @Override
+    public String toString(){
+        return tokenType+" "+value;
+    }
 }
