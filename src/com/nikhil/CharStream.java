@@ -42,11 +42,12 @@ public class CharStream {
     void beginReading(){
 
         String line;
+        int row=1;// in the question it is expected to start from one
         try {
             while((line = file.readLine()) != null) {
                 System.out.println(line);//TODO get rid of this and replace with tokenizing code
                 // iterate through this line character by character
-                lexify(line);
+                lexify(line,row++);
             }
             file.close();
         }
@@ -61,12 +62,15 @@ public class CharStream {
         printToFile("outputFile");
     }
 
-    private void lexify(String line){
+    private void lexify(String line,int row){
         //appends to the tokenList
         int length = line.length();
         Token token;
+        int originalColumn;
+
         for(int i=0;i<length;i++) {
             char c = line.charAt(i);
+            originalColumn=c;
 
             //alphanumeric id
             if (Character.isLetter(c)) {
@@ -104,6 +108,8 @@ public class CharStream {
             }
 
             if(token!=null){
+                token.row = row;
+                token.col = originalColumn;
                 tokenList.add(token);
                 System.out.println(token.toString());
             }
@@ -119,5 +125,9 @@ public class CharStream {
 
     private void printToFile(String outputFile){
         // TODO print whatever exists in the token list to the file
+
+        for(Token token :tokenList){
+
+        }
     }
 }
