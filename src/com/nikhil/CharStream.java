@@ -48,6 +48,7 @@ public class CharStream {
                 System.out.println(line);//TODO get rid of this and replace with tokenizing code
                 // iterate through this line character by character
                 lexify(line,row++);
+                printToFile("output");
             }
             file.close();
         }
@@ -111,7 +112,7 @@ public class CharStream {
                 token.row = row;
                 token.col = originalColumn;
                 tokenList.add(token);
-                System.out.println(token.toString());
+//                System.out.println(token.toString());
             }
 
         }
@@ -127,7 +128,8 @@ public class CharStream {
         // TODO print whatever exists in the token list to the file
 
         for(Token token :tokenList){
-
+            String line = token.row+":"+token.col+" "+token.tokenType;
+            System.out.println(line);
         }
     }
 }
