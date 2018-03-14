@@ -5,7 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by nikhilverma on 2/14/18.
@@ -18,11 +20,32 @@ public class CharStream {
     boolean eof = false;
     List<Token> tokenList = new ArrayList<>();
     private String outputFileName;
+    private Map<String,TokenType> keywords = new HashMap<>();
 
     public CharStream(String filename) throws FileNotFoundException {
         this.filename = filename;
         this.reader = new FileReader(this.filename);
         this.file = new BufferedReader(this.reader);
+        this.insertKeywords();
+    }
+
+    private void insertKeywords(){
+        this.keywords.put("while",TokenType.WHILE);
+        this.keywords.put("if",TokenType.IF);
+        this.keywords.put("else",TokenType.ELSE);
+        this.keywords.put("=",TokenType.ASSIGN_EQ);
+        this.keywords.put("*",TokenType.MUL);
+        this.keywords.put("/",TokenType.DIV);
+        this.keywords.put("+",TokenType.PLUS);
+        this.keywords.put("-",TokenType.MINUS);
+        this.keywords.put("==",TokenType.COMPARE_EQ);
+        this.keywords.put("void",TokenType.VOID);
+        this.keywords.put("interface",TokenType.INTERFACE);
+        this.keywords.put("int",TokenType.INT);
+        this.keywords.put("new",TokenType.NEW);
+        this.keywords.put("this",TokenType.THIS);
+        this.keywords.put("bool",TokenType.BOOLEAN);
+
     }
 
     void next() throws Exception{
@@ -60,7 +83,7 @@ public class CharStream {
 
         }
 
-        printToFile("outputFile");
+        printToFile(this.outputFileName);
     }
 
     private void lexify(String line,int row){
