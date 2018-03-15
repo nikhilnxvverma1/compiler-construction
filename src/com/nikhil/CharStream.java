@@ -91,13 +91,22 @@ public class CharStream {
         int length = line.length();
         Token token;
         int originalColumn;
+        StringBuilder keywordSoFar = new StringBuilder();
 
         for(int i=0;i<length;i++) {
             char c = line.charAt(i);
             originalColumn=c;
+            keywordSoFar.append(c);
+            TokenType tokenType = this.keywords.get(keywordSoFar.toString());
+            if(tokenType!=null){
+                token = new Token();
+                token.tokenType = tokenType;
+                keywordSoFar = new StringBuilder();
+            }else if(Character.isLetter(c))
 
-            //alphanumeric id
-            if (Character.isLetter(c)) {
+                // TODO interfearance with keyword so far above
+                //alphanumeric id
+                    {
                 StringBuffer alphanumericId = new StringBuffer();
                 while (Character.isLetter(c) || Character.isDigit(c)) {
                     alphanumericId.append(c);
@@ -108,10 +117,9 @@ public class CharStream {
                 }
                 token = new Token();
                 token.tokenType = TokenType.ID;
-            }
+            }else if (Character.isDigit(c)) {
 
-            //number
-            if (Character.isDigit(c)) {
+                //number
                 int k = 0;
                 while (Character.isDigit(c)) {
                     k = 10 * k + Character.getNumericValue(c);
@@ -126,25 +134,20 @@ public class CharStream {
                 token.tokenType = TokenType.INT;
                 token.value = k;
             }else{
+
+                //TODO remove this case after examination
                 token = new Token();
                 token.tokenType = TokenType.KEYWORD;
-                token.value = c;// TODO look ahead upto the end
+                token.value = c;
             }
 
             if(token!=null){
                 token.row = row;
                 token.col = originalColumn;
                 tokenList.add(token);
-//                System.out.println(token.toString());
             }
 
         }
-//        if(!keywords.containsKey(b.toString)){
-//            token.kind = ID;
-//            token.id = b;
-//        }
-//        else token.kind = KW;
-//        }
     }
 
     private void printToFile(String outputFile){
