@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7534ae4-a500-46cd-aa45-35afd4aed1f5" name="Default" comment="Ke">
+    <list default="true" id="d7534ae4-a500-46cd-aa45-35afd4aed1f5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nikhil/CharStream.java" afterPath="$PROJECT_DIR$/src/com/nikhil/CharStream.java" />
     </list>
@@ -44,8 +44,8 @@
       <file leaf-file-name="CharStream.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="106" column="63" lean-forward="false" selection-start-line="106" selection-start-column="63" selection-end-line="106" selection-end-column="63" />
+            <state relative-caret-position="873">
+              <caret line="120" column="54" lean-forward="false" selection-start-line="120" selection-start-column="54" selection-end-line="120" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -612,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520999571432</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Detecting keywords by building string character by character">
+      <created>1521085992390</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1521085992390</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -653,7 +660,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Rough tokenization code as discussed in lecture (errors present)" />
     <MESSAGE value="Created a map for tokens against keywords" />
     <MESSAGE value="Handling of command line arguments. Additions in keywords map" />
     <MESSAGE value="Removal of errors arising from sample code from lecture" />
@@ -678,7 +684,8 @@
     <MESSAGE value="Obtaining the positional information of a token" />
     <MESSAGE value="Formation of output line for each lexical term" />
     <MESSAGE value="Partial entry of keywords in a map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Partial entry of keywords in a map" />
+    <MESSAGE value="Detecting keywords by building string character by character" />
+    <option name="LAST_COMMIT_MESSAGE" value="Detecting keywords by building string character by character" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -829,8 +836,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="106" column="63" lean-forward="false" selection-start-line="106" selection-start-column="63" selection-end-line="106" selection-end-column="63" />
+        <state relative-caret-position="873">
+          <caret line="120" column="54" lean-forward="false" selection-start-line="120" selection-start-column="54" selection-end-line="120" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

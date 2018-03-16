@@ -89,7 +89,7 @@ public class CharStream {
     private void lexify(String line,int row){
         //appends to the tokenList
         int length = line.length();
-        Token token;
+        Token token=null;
         int originalColumn;
         StringBuilder keywordSoFar = new StringBuilder();
 
@@ -117,6 +117,9 @@ public class CharStream {
                 }
                 token = new Token();
                 token.tokenType = TokenType.ID;
+
+                //reset keyword so far string builder
+                keywordSoFar = new StringBuilder();
             }else if (Character.isDigit(c)) {
 
                 //number
@@ -133,12 +136,6 @@ public class CharStream {
                 token = new Token();
                 token.tokenType = TokenType.INT;
                 token.value = k;
-            }else{
-
-                //TODO remove this case after examination
-                token = new Token();
-                token.tokenType = TokenType.KEYWORD;
-                token.value = c;
             }
 
             if(token!=null){
