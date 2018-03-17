@@ -34,10 +34,18 @@ public class CharStream {
         this.keywords.put("if",TokenType.IF);
         this.keywords.put("else",TokenType.ELSE);
         this.keywords.put("=",TokenType.ASSIGN_EQ);
+        this.keywords.put("{",TokenType.LPAREN);
+        this.keywords.put("}",TokenType.RPAREN);
+        this.keywords.put(";",TokenType.SEMICOLON);
         this.keywords.put("*",TokenType.MUL);
         this.keywords.put("/",TokenType.DIV);
         this.keywords.put("+",TokenType.PLUS);
         this.keywords.put("-",TokenType.MINUS);
+        this.keywords.put("==",TokenType.COMPARE_EQ);
+        this.keywords.put("<=",TokenType.LESS_THAN_EQUAL_TO);
+        this.keywords.put("<",TokenType.LESS_THAN);
+        this.keywords.put(">=",TokenType.GREATER_THAN_EQUAL_TO);
+        this.keywords.put(">",TokenType.GREATER_THAN);
         this.keywords.put("==",TokenType.COMPARE_EQ);
         this.keywords.put("void",TokenType.VOID);
         this.keywords.put("interface",TokenType.INTERFACE);
