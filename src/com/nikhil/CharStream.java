@@ -47,6 +47,7 @@ public class CharStream {
         this.keywords.put(">=",TokenType.GREATER_THAN_EQUAL_TO);
         this.keywords.put(">",TokenType.GREATER_THAN);
         this.keywords.put("==",TokenType.COMPARE_EQ);
+        this.keywords.put(".",TokenType.DOT);
         this.keywords.put("void",TokenType.VOID);
         this.keywords.put("interface",TokenType.INTERFACE);
         this.keywords.put("int",TokenType.INT);
@@ -112,7 +113,7 @@ public class CharStream {
                 keywordSoFar = new StringBuilder();
             }else if(Character.isLetter(c))
 
-                // TODO interfearance with keyword so far above
+                // to avoid interfearance with keyword so far above we reset the keywordSoFar later
                 //alphanumeric id
                     {
                 StringBuffer alphanumericId = new StringBuffer();

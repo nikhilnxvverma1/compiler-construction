@@ -22,6 +22,7 @@ public enum TokenType {
     GREATER_THAN_EQUAL_TO,
     LESS_THAN,
     GREATER_THAN,
+    DOT,
     IF,
     ELSE,
     INTERFACE,
