@@ -142,6 +142,9 @@ public class CharStream {
                     }
 
                 }
+
+                // TODO handle the case for floating point numbers
+
                 token = new Token();
                 token.tokenType = TokenType.INT;
                 token.value = k;

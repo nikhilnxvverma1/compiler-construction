@@ -7,7 +7,7 @@ public enum TokenType {
     EOF,
     ID, //x
     INT,
-    KEYWORD,
+    KEYWORD,// TODO should be removed considering keywords have to be identified specifically
     LPAREN,
     RPAREN,
     SEMICOLON,
