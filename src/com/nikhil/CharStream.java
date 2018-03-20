@@ -58,7 +58,6 @@ public class CharStream {
     }
 
     void next() throws Exception{
-        //TODO rough code as described in lecture
 
         if ( eof ){
 //            throw new Exception("reading");
@@ -77,7 +76,7 @@ public class CharStream {
         int row=1;// in the question it is expected to start from one
         try {
             while((line = file.readLine()) != null) {
-                System.out.println(line);//TODO get rid of this and replace with tokenizing code
+                System.out.println(line);
                 // iterate through this line character by character
                 lexify(line,row++);
                 printToFile("output");

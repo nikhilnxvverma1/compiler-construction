@@ -4,7 +4,7 @@
     <list default="true" id="d7534ae4-a500-46cd-aa45-35afd4aed1f5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nikhil/CharStream.java" afterPath="$PROJECT_DIR$/src/com/nikhil/CharStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nikhil/TokenType.java" afterPath="$PROJECT_DIR$/src/com/nikhil/TokenType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nikhil/Lexer.java" afterPath="$PROJECT_DIR$/src/com/nikhil/Lexer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +35,8 @@
       <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/Lexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CharStream.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CharStream.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="140" column="41" lean-forward="true" selection-start-line="140" selection-start-column="41" selection-end-line="140" selection-end-column="41" />
+            <state relative-caret-position="435">
+              <caret line="81" column="38" lean-forward="true" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TokenType.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TokenType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/TokenType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="93" lean-forward="true" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
+            <state relative-caret-position="405">
+              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -138,14 +138,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/nikhil/Lexicar.java" />
-        <option value="$PROJECT_DIR$/src/com/nikhil/Lexer.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/EndOfInput.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/Main.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/Arguments.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/Position.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/Token.java" />
-        <option value="$PROJECT_DIR$/src/com/nikhil/CharStream.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/TokenType.java" />
+        <option value="$PROJECT_DIR$/src/com/nikhil/Lexer.java" />
+        <option value="$PROJECT_DIR$/src/com/nikhil/CharStream.java" />
       </list>
     </option>
   </component>
@@ -654,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521344492599</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Identified new keyword case and suggested removal">
+      <created>1521431850870</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1521431850870</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -695,7 +702,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Reference code for reading a file" />
     <MESSAGE value="Minor change in testing code" />
     <MESSAGE value="Handling of file reading in char stream" />
     <MESSAGE value="Very basic handling of lines in a file" />
@@ -720,7 +726,8 @@
     <MESSAGE value="Resetting keyword builder and removing unneeded case" />
     <MESSAGE value="Added more keywords in the map" />
     <MESSAGE value="Clarified a TODO and added dot operator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clarified a TODO and added dot operator" />
+    <MESSAGE value="Identified new keyword case and suggested removal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Identified new keyword case and suggested removal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -817,16 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="140" column="41" lean-forward="true" selection-start-line="140" selection-start-column="41" selection-end-line="140" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/Arguments.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -842,16 +839,6 @@
           <folding>
             <element signature="e#162#163#0" expanded="true" />
             <element signature="e#200#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nikhil/Lexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -879,9 +866,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/TokenType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="93" lean-forward="true" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
+        <state relative-caret-position="405">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nikhil/Lexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="81" column="38" lean-forward="true" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
