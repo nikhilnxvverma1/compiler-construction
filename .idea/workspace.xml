@@ -4,7 +4,7 @@
     <list default="true" id="d7534ae4-a500-46cd-aa45-35afd4aed1f5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nikhil/CharStream.java" afterPath="$PROJECT_DIR$/src/com/nikhil/CharStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nikhil/Lexer.java" afterPath="$PROJECT_DIR$/src/com/nikhil/Lexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nikhil/TokenType.java" afterPath="$PROJECT_DIR$/src/com/nikhil/TokenType.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,14 +44,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CharStream.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CharStream.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="81" column="38" lean-forward="true" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+            <state relative-caret-position="243">
+              <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinarySearch.emj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BinarySearch.emj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TokenType.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TokenType.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/TokenType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            <state relative-caret-position="120">
+              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -116,6 +126,7 @@
     <findStrings>
       <find>;</find>
       <find>dot</find>
+      <find>sidf`</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -143,8 +154,8 @@
         <option value="$PROJECT_DIR$/src/com/nikhil/Arguments.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/Position.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/Token.java" />
-        <option value="$PROJECT_DIR$/src/com/nikhil/TokenType.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/Lexer.java" />
+        <option value="$PROJECT_DIR$/src/com/nikhil/TokenType.java" />
         <option value="$PROJECT_DIR$/src/com/nikhil/CharStream.java" />
       </list>
     </option>
@@ -661,7 +672,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521431850870</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Minor refactoring and adjustments">
+      <created>1521509537198</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1521509537198</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -702,7 +720,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Minor change in testing code" />
     <MESSAGE value="Handling of file reading in char stream" />
     <MESSAGE value="Very basic handling of lines in a file" />
     <MESSAGE value="Tokenizing a line character by character (incomplete)" />
@@ -727,7 +744,8 @@
     <MESSAGE value="Added more keywords in the map" />
     <MESSAGE value="Clarified a TODO and added dot operator" />
     <MESSAGE value="Identified new keyword case and suggested removal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Identified new keyword case and suggested removal" />
+    <MESSAGE value="Minor refactoring and adjustments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor refactoring and adjustments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -809,18 +827,31 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/Lexicar.java" />
-    <entry file="file://$PROJECT_DIR$/BinarySearch.emj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nikhil/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nikhil/Lexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -843,16 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nikhil/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/Token.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -864,31 +885,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nikhil/TokenType.java">
+    <entry file="file://$PROJECT_DIR$/BinarySearch.emj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        <state relative-caret-position="182">
+          <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nikhil/Lexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="81" column="38" lean-forward="true" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+        <state relative-caret-position="243">
+          <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nikhil/TokenType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

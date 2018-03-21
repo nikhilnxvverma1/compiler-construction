@@ -54,6 +54,7 @@ public class CharStream {
         this.keywords.put("new",TokenType.NEW);
         this.keywords.put("this",TokenType.THIS);
         this.keywords.put("bool",TokenType.BOOLEAN);
+        this.keywords.put("sidef",TokenType.SIDEF);
 
     }
 
