@@ -15,7 +15,7 @@ public class Main {
             CharStream charStream = new CharStream(arguments.filename);
             charStream.beginReading();
         }catch (FileNotFoundException ex){
-            //TODO
+            System.out.println("Cannot find file "+arguments.filename);
         }
 
 

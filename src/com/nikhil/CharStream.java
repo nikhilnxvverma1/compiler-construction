@@ -68,7 +68,7 @@ public class CharStream {
         int c = file . read () ;
         eof = ( c == -1) ;
         current = ( char ) c ;
-        System.out.print(this.current);
+
     }
 
     void beginReading(){
