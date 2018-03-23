@@ -8,7 +8,7 @@ public class Token {
     /** In case of numeric values*/
     int value;
     /** In case of alphanumeric ids*/
-    int id;
+    String id;
 
     int row;
     int col;

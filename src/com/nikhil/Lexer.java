@@ -73,6 +73,7 @@ public class Lexer {
                 }
                 token = new Token();
                 token.tokenType = TokenType.ID;
+                token.id = alphanumericId.toString();
 
                 //reset keyword so far string builder
                 keywordSoFar = new StringBuilder();
