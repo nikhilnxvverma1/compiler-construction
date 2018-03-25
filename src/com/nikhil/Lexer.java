@@ -18,27 +18,6 @@ public class Lexer {
 
     void next() throws Exception {
 
-//        String line;
-//        int row=1;// in the question it is expected to start from one
-//        try {
-//            while(ch.next();) != null) {
-//                System.out.println(line);
-//                // iterate through this line character by character
-//                lexify(line,row++);
-//                printToFile("output");
-//            }
-//            file.close();
-//        }
-//        catch(FileNotFoundException ex) {
-//            System.out.println(ex.getMessage());
-//        }
-//        catch(IOException ex) {
-//            System.out.println(ex.getMessage());
-//
-//        }
-//
-//        printToFile(this.outputFileName);
-
 
     }
 
