@@ -1,5 +1,7 @@
 package com.nikhil;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -15,12 +17,39 @@ public class Lexer {
     private Map<String,TokenType> keywords = new HashMap<>();
     List<Token> tokenList = new ArrayList<>();
 
+    Lexer(CharStream ch){
+        this.ch = ch;
+    }
+
     void next() throws Exception {
 
 
     }
 
-    private void lexify(String line,int row){
+    void beginReading(){
+
+        String line;
+        int row=1;// in the question it is expected to start from one
+        try {
+            char c;
+            while((c = ch.next()) != null) {
+
+                // iterate through this line character by character
+                lexify(line,row++);
+                printToFile("output");
+            }
+        }
+        catch(EndOfInput ex) {
+            System.out.println(ex.getMessage());
+        }
+        catch(FileNotFoundException ex) {
+            System.out.println(ex.getMessage());
+        }
+
+
+    }
+
+    public void lexify(String line,int row){
         //appends to the tokenList
         int length = line.length();
         Token token=null;
@@ -80,6 +109,14 @@ public class Lexer {
                 tokenList.add(token);
             }
 
+        }
+    }
+
+    private void printToFile(String outputFile){
+
+        for(Token token :tokenList){
+            String line = token.row+":"+token.col+" "+token.tokenType;
+//            System.out.println(line);
         }
     }
 }

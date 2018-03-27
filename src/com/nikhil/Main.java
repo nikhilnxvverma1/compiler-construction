@@ -13,7 +13,9 @@ public class Main {
 
         try{
             CharStream charStream = new CharStream(arguments.filename);
-            charStream.beginReading();
+            Lexer lexer = new Lexer(charStream);
+
+
         }catch (FileNotFoundException ex){
             System.out.println("Cannot find file "+arguments.filename);
         }
