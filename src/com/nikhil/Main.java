@@ -20,6 +20,5 @@ public class Main {
             System.out.println("Cannot find file "+arguments.filename);
         }
 
-        // TODO use Lexer class here
     }
 }

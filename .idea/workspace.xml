@@ -24,8 +24,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,8 +36,8 @@
       <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/Lexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="198">
+              <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#465#466#0" expanded="true" />
@@ -50,8 +50,8 @@
       <file leaf-file-name="CharStream.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -711,7 +711,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522036724093</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Enhanced lexer with driver code (but with errors)">
+      <created>1522120440080</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1522120440080</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -752,7 +759,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corrected construction of EndOfInput exception" />
     <MESSAGE value="Rough logic for detecting keywords in a line" />
     <MESSAGE value="Extracted command line interface arguments in a separate class" />
     <MESSAGE value="Moved argument extraction code in its own class" />
@@ -777,7 +783,8 @@
     <MESSAGE value="Cleared out unneeded commented code" />
     <MESSAGE value="Got rid of misleading code in Lexer" />
     <MESSAGE value="Minor documentation for a class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor documentation for a class" />
+    <MESSAGE value="Enhanced lexer with driver code (but with errors)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhanced lexer with driver code (but with errors)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -919,8 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -929,8 +936,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -939,8 +946,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        <state relative-caret-position="198">
+          <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#465#466#0" expanded="true" />

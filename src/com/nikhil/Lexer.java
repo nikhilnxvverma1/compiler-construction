@@ -32,21 +32,27 @@ public class Lexer {
         int row=1;// in the question it is expected to start from one
         try {
             char c;
-            while((c = ch.next()) != null) {
-
+            while(!ch.eof) {
+                ch.next();
                 // iterate through this line character by character
-                lexify(line,row++);
+//                lexify(line,row++);
+                lexify(ch.current);
                 printToFile("output");
             }
         }
         catch(EndOfInput ex) {
             System.out.println(ex.getMessage());
         }
-        catch(FileNotFoundException ex) {
-            System.out.println(ex.getMessage());
+        catch(IOException ex) {
+
+            System.out.println("Error: file read"+ex.getMessage());
         }
 
 
+    }
+
+    public void lexify(char c){
+        // TODO
     }
 
     public void lexify(String line,int row){

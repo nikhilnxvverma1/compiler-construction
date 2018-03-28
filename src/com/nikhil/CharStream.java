@@ -58,7 +58,7 @@ public class CharStream {
 
     }
 
-    void next() throws EndOfInput,Exception{
+    void next() throws IOException,EndOfInput{
 
         if ( eof ){
 //            throw new Exception("reading");
