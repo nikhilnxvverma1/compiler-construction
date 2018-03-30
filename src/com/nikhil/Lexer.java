@@ -1,6 +1,5 @@
 package com.nikhil;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,11 +18,6 @@ public class Lexer {
 
     Lexer(CharStream ch){
         this.ch = ch;
-    }
-
-    void next() throws Exception {
-
-
     }
 
     void beginReading(){
