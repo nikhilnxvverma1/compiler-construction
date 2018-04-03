@@ -1,6 +1,7 @@
 package com.nikhil;
 
 /**
+ * Different types of token types in the language
  * Created by nikhilverma on 2/13/18.
  */
 public enum TokenType {
