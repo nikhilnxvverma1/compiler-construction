@@ -22,7 +22,7 @@ public class Lexer {
 
     void beginReading(){
 
-        String line;
+        String line;// TODO unused get rid of it if not needed
         int row=1;// in the question it is expected to start from one
         try {
             char c;
