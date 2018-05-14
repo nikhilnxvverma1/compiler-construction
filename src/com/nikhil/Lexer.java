@@ -47,9 +47,12 @@ public class Lexer {
 
     public void lexify(char c){
         // TODO
+        // get a charecter from the charachter stream
+        // keep track of the last letter scanned
+        // build up the current lexeme
     }
 
-    public void lexify(String line,int row){
+    public void lexify(String line,int row){// TODO remove and use above prototype
         //appends to the tokenList
         int length = line.length();
         Token token=null;
