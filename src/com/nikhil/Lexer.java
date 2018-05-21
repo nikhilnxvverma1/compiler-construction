@@ -50,6 +50,19 @@ public class Lexer {
         // get a charecter from the charachter stream
         // keep track of the last letter scanned
         // build up the current lexeme
+
+        while(!ch.eof){
+            char current = ch.current;
+
+            try{
+                ch.next();
+            }catch (EndOfInput eoi){
+                System.out.println("End of input reached");
+            }catch (IOException ioe){
+                System.out.println("Error reading file "+ioe.getMessage());
+            }
+
+        }
     }
 
     public void lexify(String line,int row){// TODO remove and use above prototype

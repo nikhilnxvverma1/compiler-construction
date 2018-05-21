@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7534ae4-a500-46cd-aa45-35afd4aed1f5" name="Default" comment="Minor note on refactoring">
+    <list default="true" id="d7534ae4-a500-46cd-aa45-35afd4aed1f5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nikhil/Lexer.java" afterPath="$PROJECT_DIR$/src/com/nikhil/Lexer.java" />
     </list>
@@ -32,8 +32,8 @@
       <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/Lexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+            <state relative-caret-position="315">
+              <caret line="61" column="75" lean-forward="true" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,7 +44,7 @@
       <file leaf-file-name="CharStream.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
+            <state relative-caret-position="885">
               <caret line="107" column="35" lean-forward="true" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -740,7 +740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525797815804</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Summarised lexify method in lexer class">
+      <created>1526321619941</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1526321619942</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -781,7 +788,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Pushed token to the token list" />
     <MESSAGE value="Simplyfying the creation of args" />
     <MESSAGE value="Defined groundwork for printing to output file" />
     <MESSAGE value="Fixed counter in the traversal of input stream" />
@@ -806,7 +812,8 @@
     <MESSAGE value="Removed unnecessary code, made the main driving call" />
     <MESSAGE value="Small documentation &amp; refactoring" />
     <MESSAGE value="Minor note on refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor note on refactoring" />
+    <MESSAGE value="Summarised lexify method in lexer class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Summarised lexify method in lexer class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1133,7 +1140,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/CharStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
+        <state relative-caret-position="885">
           <caret line="107" column="35" lean-forward="true" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1143,8 +1150,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nikhil/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+        <state relative-caret-position="315">
+          <caret line="61" column="75" lean-forward="true" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
